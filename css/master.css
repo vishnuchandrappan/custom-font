@@ -1,0 +1,56 @@
+/* @font-face rule allows us to use custom fonts */
+@font-face {
+  font-family: 'BananaSuper';
+  /* This will be the name of our font - REQUIRED */
+
+  font-style: normal;
+  /* Default font-style */
+
+  font-weight: 400;
+  /* Default font-weight */
+
+  src:  url(../fonts/BananaSuper.otf) format('opentype');
+  /* specifying the path and format of the font-file - REQUIRED
+
+     +-----------------+----------+
+     |    EXTENSION    |  FORMAT  |
+     +-----------------+----------+
+     |     otf         | opentype |
+     +-----------------+----------+
+     |     ttf         | truetype |
+     +-----------------+----------+
+     |     woff        |   woff   |
+     +-----------------+----------+
+     |    woff2        |  woff2   |
+     +-----------------+----------+
+  */
+
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+0D01-0D7F, U+200C-U+200D, U+25CC;
+  /* specifying the charecter support */
+}
+
+@font-face {
+  font-family: 'khand';
+  font-weight: 400;
+  src:  url(../fonts/khand.ttf) format('truetype');
+}
+
+
+
+h1 {
+  font-family: 'BananaSuper';
+}
+
+h2 {
+  font-family: 'khand';
+}
+
+.container{
+    display: block;
+    max-width: 500px;
+    background: gray;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
